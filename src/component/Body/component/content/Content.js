@@ -3,13 +3,18 @@ import Card from "./component/Card"
 import ChosenFilter from "./component/ChosenFilter";
 
 const Content = ({ result }) => {
+    const handleOnClick = (id) =>{
+        console.log(result[id-1]);
+    }
     const newCard = result.map(info => {
         return (
             <Card
                 key={info.id}
+                id={info.id}
                 image={info.image}
                 name={info.name}
                 status={info.status}
+                handleClick={handleOnClick}
             />
         )
     });

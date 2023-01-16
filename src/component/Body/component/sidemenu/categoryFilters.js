@@ -4,15 +4,15 @@ export default [
         {
             id: "alive",
             value: "Alive",
-            name: "status"
+            name: "alive"
         }, {
             id: "dead",
             value: "Dead",
-            name: "status"
+            name: "dead"
         }, {
             id: "unknown",
             value: "Unknown",
-            name: "status"
+            name: "unknown"
         }
     ],
     // Specie
@@ -20,19 +20,19 @@ export default [
         {
             id: "human",
             value: "Human",
-            name: "specie"
+            name: "human"
         }, {
             id: "alien",
             value: "Alien",
-            name: "specie"
+            name: "alien"
         }, {
             id: "humanoid",
             value: "Humanoid",
-            name: "specie"
+            name: "humanoid"
         }, {
             id: "mythological-creature",
             value: "Mythological Creature",
-            name: "specie"
+            name: "mythologicalCreature"
         }
     ],
     // Gender
@@ -40,19 +40,89 @@ export default [
         {
             id: "male",
             value: "Male",
-            name: "gender"
+            name: "male"
         }, {
             id: "female",
             value: "Female",
-            name: "gender"
+            name: "female"
         }, {
             id: "genderlerss",
             value: "Genderless",
-            name: "gender"
+            name: "genderless"
         }, {
             id: "unknown-gender",
             value: "Unknown Gender",
-            name: "gender"
+            name: "unknownGender"
         }
     ]
 ]
+
+// export default [
+//     // Status
+//     [
+//         {
+//             id: "alive",
+//             value: "alive",
+//             text: "Alive",
+//             name: "status"
+//         }, {
+//             id: "dead",
+//             value: "dead",
+//             text: "Dead",
+//             name: "status"
+//         }, {
+//             id: "unknown",
+//             value: "unknown",
+//             text: "Unknown",
+//             name: "status"
+//         }
+//     ],
+//     // Specie
+//     [
+//         {
+//             id: "human",
+//             value: "human",
+//             text: "Human",
+//             name: "species"
+//         }, {
+//             id: "alien",
+//             value: "alien",
+//             text: "Alien",
+//             name: "species"
+//         }, {
+//             id: "humanoid",
+//             value: "humanoid",
+//             text: "Humanoid",
+//             name: "species"
+//         }, {
+//             id: "mythological-creature",
+//             value: "mythologicalCreature",
+//             text: "Mythological Creature",
+//             name: "species"
+//         }
+//     ],
+//     // Gender
+//     [
+//         {
+//             id: "male",
+//             value: "male",
+//             text: "Male",
+//             name: "gender"
+//         }, {
+//             id: "female",
+//             value: "female",
+//             text: "Female",
+//             name: "gender"
+//         }, {
+//             id: "genderlerss",
+//             value: "genderless",
+//             text: "Genderless",
+//             name: "gender"
+//         }, {
+//             id: "unknown-gender",
+//             value: "unknownGender",
+//             text: "Unknown Gender",
+//             name: "gender"
+//         }
+//     ]
+// ]

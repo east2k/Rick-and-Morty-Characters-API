@@ -1,19 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Input from "./component/Input";
 import categoryFilters from "./categoryFilters";
 
-const Sidemenu = () => {
+const Sidemenu = ({ chosenFilters, handleFilter }) => {
     const status = categoryFilters[0]; // Status Filter
     const specie = categoryFilters[1]; // Specie Filter
     const gender = categoryFilters[2]; // Gender Filter
-
-    const [categoryFilter, setCategoryFilter] = useState();
-
-    const handleFilter = (event) => {
-        const { name, value } = event.target;
-        console.log(name, value);
-
-    }
 
     const addAttribute = (filter) => {
         return (
@@ -22,7 +14,8 @@ const Sidemenu = () => {
                 id={filter.id}
                 name={filter.name}
                 value={filter.value}
-                handleClick={handleFilter}
+                handleFilter={handleFilter}
+                chosenFilter={chosenFilters[filter.name]}
             />
         )
     }

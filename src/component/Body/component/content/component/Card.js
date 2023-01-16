@@ -1,8 +1,11 @@
 import React from "react";
 
-const Card = ({ image, name, status }) => {
+const Card = ({ id, image, name, status, handleClick }) => {
     return (
-        <div className="character-card">
+        <div
+            className="character-card"
+            onClick={() => handleClick(id)}
+        >
             <div className="character-card-image">
                 <img src={image} />
             </div>

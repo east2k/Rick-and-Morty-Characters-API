@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ id, name, value, handleClick }) => {
+const Input = ({ id, name, value, chosenFilter, handleFilter }) => {
     return (
         <label
             className="category-container"
@@ -10,7 +10,8 @@ const Input = ({ id, name, value, handleClick }) => {
                 type="checkbox"
                 name={name}
                 value={value}
-                onClick={handleClick}
+                onChange={handleFilter}
+                checked={chosenFilter}
             />
             {value}
         </label>
